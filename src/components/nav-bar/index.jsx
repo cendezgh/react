@@ -6,6 +6,7 @@ import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import CartWidget from '../cart-widget';
+import { Button } from '@mui/material';
 
 const NavBar = () => {
   const itemsInCart = 8;
@@ -25,6 +26,11 @@ const NavBar = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             TechnoStore
           </Typography>
+          <Box>
+            <Button>
+              
+            </Button>
+          </Box>
           <CartWidget itemsInCart={itemsInCart}/>
         </Toolbar>
       </AppBar>
